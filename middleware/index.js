@@ -12,7 +12,7 @@ middlewareObject.checkCampgroundOwnership = function(req, res, next){
                 res.redirect("back");
             } else {
                 // does user own the campground
-                if (foundCampround.author.id.equals(req.user._id)){  //"foundCampground.author.id" is an mongoose object, while "req.user._id" is a String. Mongoose has a function .equals(), which can compare those two values.
+                if (foundCampround.author.id.equals(req.user._id) || req.user.isAdmin){  //"foundCampground.author.id" is an mongoose object, while "req.user._id" is a String. Mongoose has a function .equals(), which can compare those two values.
                     next();
                 } else {
                     req.flash("error", "You don't have permission to do that");
@@ -34,7 +34,7 @@ middlewareObject.checkCommentOwnership = function(req, res, next){
                 res.redirect("back");
             } else {
                 // does user own the comment?
-                if (foundComment.author.id.equals(req.user._id)){  //"foundCampground.author.id" is an mongoose object, while "req.user._id" is a String. Mongoose has a function .equals(), which can compare those two values.
+                if (foundComment.author.id.equals(req.user._id) || req.user.isAdmin){  //"foundCampground.author.id" is an mongoose object, while "req.user._id" is a String. Mongoose has a function .equals(), which can compare those two values.
                     next();
                 } else {
                     req.flash("error", "You don't have permission to do that");

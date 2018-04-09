@@ -24,6 +24,7 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));  // added a more conventional route to the "public" directory
 app.use(methodOverride("_method"));
 app.use(flash());
+app.locals.moment = require('moment');
 // seedDB(); //seed the database
 
 //PASSPORT CONFIGURATION
