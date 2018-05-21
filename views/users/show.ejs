@@ -11,7 +11,7 @@
                 </a>
             </div>
         </div>
-        <h4><%= user.firstName + " " + user.lastName %>'s bio:</h3>
+        <h4><%= user.username %>'s bio:</h3>
         <p><%= user.bio %></p>
         <a class="btn btn-info btn-sm" href="/users/<%= user.id %>/edit">Edit Profile</a> <!-- FIGURE OUT HOW TO HIDE THE BUTTON IF THE PAGE ISN'T ABOUT THE CURRENT USER -->
     </div>
