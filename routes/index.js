@@ -1,11 +1,11 @@
 // ROOT ROUTE, SIGNUP AND LOGIN ROUTES
 
-var express     = require("express"),
-    router      = express.Router(),
-    passport    = require("passport"),
-    User        = require("../models/user"),
-    Campground  = require("../models/campground"),
-    middleware  = require("../middleware");
+var express         = require("express"),
+    router          = express.Router(),
+    passport        = require("passport"),
+    User            = require("../models/user"),
+    Campground      = require("../models/campground"),
+    middleware      = require("../middleware");
   
 //root route
 router.get("/", function(req, res){
@@ -63,7 +63,7 @@ router.get("/logout", function(req, res){
 });
 
 //USERS
-//view route
+//user view route
 router.get("/users/:id", function(req, res){
    User.findById(req.params.id, function(err, foundUser){
        if (err){
@@ -90,6 +90,19 @@ router.get("/users/:id/edit", function(req, res){
         }
         res.render("users/edit", {user: foundUser});
     }); 
+});
+
+//user update route
+router.put("/users/:id", function(req, res){
+    User.findByIdAndUpdate(req.params.id, req.body.user, function(err, updatedUser){
+        if(err){
+            req.flash("error", err.message);
+            res.redirect("back");
+        } else {
+            req.flash("success","Profile successfully updated!");
+            res.redirect("/users/" + updatedUser._id);
+        }
+    });
 });
 
 

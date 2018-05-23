@@ -3,7 +3,7 @@
 <div class="row">
     <h1 style="text-align: center">Edit Profile</h1>
     <div style="width: 30%; margin: 25px auto;">
-        <form action="/users/<% user.id %>?_method=PUT" method="POST">
+        <form action="/users/<%= user._id %>?_method=PUT" method="POST">
             <div class="form-group">
                 <label>E-mail address:</label>
                 <input class="form-control" type="email" name="user[email]" value="<%= user.email %>">
