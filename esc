@@ -1,0 +1,65 @@
+[33mcommit 154c3bf9eecfbc3186504183b6e763b00fa296c2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Andrey Buchnev <mr.buchnev@gmail.com>
+Date:   Wed May 23 09:46:46 2018 +0000
+
+    upload photo functionality added
+
+[33mcommit 3b0aaddcbf174e5a6b1fbc902ca9e58a6acf0aa7[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Andrey Buchnev <mr.buchnev@gmail.com>
+Date:   Wed May 23 07:50:37 2018 +0000
+
+    user update functionality added, usernames in the comment section are now links to the users' personal page
+
+[33mcommit 5fcf1524b9113634ea9db7100fb36aaf1a7ef630[m[33m ([m[1;31mheroku/master[m[33m)[m
+Author: Andrey Buchnev <mr.buchnev@gmail.com>
+Date:   Mon May 21 10:39:12 2018 +0000
+
+    update user register form
+
+[33mcommit 40b5fb541b11d9341ffc8e10aaf23748b5506878[m
+Author: Andrey Buchnev <mr.buchnev@gmail.com>
+Date:   Mon May 21 10:24:28 2018 +0000
+
+    update user login labels
+
+[33mcommit 0c4f3631b3c15e24129f00bfe2871f61a9e28b9b[m
+Author: Andrey Buchnev <mr.buchnev@gmail.com>
+Date:   Mon May 21 10:22:57 2018 +0000
+
+    update user register information
+
+[33mcommit 192b2b3e50791c4da2b1daf1816ead11dfed4da5[m
+Author: Andrey Buchnev <mr.buchnev@gmail.com>
+Date:   Mon May 21 10:19:32 2018 +0000
+
+    update google maps functionality
+
+[33mcommit bb5bb6bacdf5b1aa74e488e526bfa186a431f40a[m
+Author: Andrey Buchnev <mr.buchnev@gmail.com>
+Date:   Mon Apr 9 12:03:15 2018 +0000
+
+    add user profiles
+
+[33mcommit f5a2332c97ffdffe98fa2df3cfe03190a322953c[m
+Author: Andrey Buchnev <mr.buchnev@gmail.com>
+Date:   Fri Mar 9 12:39:30 2018 +0000
+
+    add google maps functionality. fix bugs with update route
+
+[33mcommit c544b254b71c29ed571a0b607217416e667b31c7[m
+Author: Andrey Buchnev <mr.buchnev@gmail.com>
+Date:   Wed Feb 28 14:26:32 2018 +0000
+
+    connect to mLab database
+
+[33mcommit 8049f71dd59671a82f8b84a3fe3b0a3ca277c44e[m
+Author: Andrey Buchnev <mr.buchnev@gmail.com>
+Date:   Wed Feb 28 13:34:37 2018 +0000
+
+    add script start in package.json
+
+[33mcommit 4d2af5457a1d6781cd7e0c58ad886e7075b26f54[m
+Author: Andrey Buchnev <mr.buchnev@gmail.com>
+Date:   Wed Feb 28 13:31:26 2018 +0000
+
+    initial deploy commit
