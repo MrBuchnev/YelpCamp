@@ -80,15 +80,15 @@ router.post("/", middleware.isLoggedIn, upload.single('image'), function(req, re
                 username: req.user.username
             };  
 
-        // Create a new campground and save to DB
-        Campground.create(req.body.campground, function(err, campground){
-            if(err){
-                 req.flash('failure', err.message);
-                 return res.redirect('back');
-            } 
-            //redirect back to campgrounds page
-            res.redirect('/campgrounds/' + campground.id);
-        });
+            // Create a new campground and save to DB
+            Campground.create(req.body.campground, function(err, campground){
+                if(err){
+                     req.flash('failure', err.message);
+                     return res.redirect('back');
+                } 
+                //redirect back to campgrounds page
+                res.redirect('/campgrounds/' + campground.id);
+            });
         });
     });
 });
